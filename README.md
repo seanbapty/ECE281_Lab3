@@ -2,7 +2,7 @@ ECE281_Lab3
 ===========
 # Pre-Lab
 #### Top Shell Schematic
-![alt tag](https://raw.github.com/seanbapty/ECE281_Lab3/master/topshellschematic2.jpg)
+![alt tag](https://raw.github.com/seanbapty/ECE281_Lab3/master/topshellschematic3.JPG)
 
 The given code in the top shell is the controlling body for the LED display. This VHDL code takes input data and converts it into a type that can be used on the FPGA.
 
