@@ -39,7 +39,7 @@ architecture Behavioral of Nexys2_top_shell is
 --Inputs: 4-bit vector called "nibble"
 --Outputs: 8-bit vector "sseg" used for driving a single 7-segment display
 ---------------------------------------------------------------------------------------
-	COMPONENT nibble_to_sseg
+	COMPONENT nibble_to_sseg --output goes to nexys2_sseg
 	PORT(
 		nibble : IN std_logic_vector(3 downto 0);          
 		sseg : OUT std_logic_vector(7 downto 0)
@@ -72,7 +72,7 @@ architecture Behavioral of Nexys2_top_shell is
 --Output: 27-bit clockbus. Reference module for the relative clock speeds of each bit
 --			 assuming system clock is 50MHz
 -------------------------------------------------------------------------------------
-	COMPONENT Clock_Divider
+	COMPONENT Clock_Divider --clk is the same as clk_50m
 	PORT(
 		clk : IN std_logic;          
 		clockbus : OUT std_logic_vector(26 downto 0)
