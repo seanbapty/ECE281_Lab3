@@ -2,7 +2,9 @@ ECE281_Lab3
 ===========
 #Functionality
 Basic Moore
+
 Basic Mealy
+
 More Floors
 
 # Pre-Lab
