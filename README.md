@@ -11,6 +11,17 @@ The given code in the top shell is the controlling body for the LED display. Thi
 
 #### Bad Code 
 ```
+if clk'event and clk='1' then
+```
+This code is a more confusing than needs be way of setting the rising edge.
+#### Good Code
+```
+if (rising_edge(clk)) then
+```
+This code sets a process based on a single boolean expression.
+
+#### Bad Code
+```
 ***
 floor_state_machine: process(clk)
 ***
@@ -19,11 +30,15 @@ This code is improper because it combines next state logic and state memory in o
 
 #### Good Code
 ```
+Process XXXXX
+--Next floor logic based on inputs
+
 ***
-floor_state_machine : process(clk, up_down, reset, stop)
+floor_state_machine : process(clk) 
+--State memory logic based on clk and next state from process XXX
 ***
 ```
-By adding all posible inputs to the process's sensitivity list, the program does not have to "remember" what the values for an input were, thus eliminating the undesired memory.
+By seperating next state logic from state memory, the program does not create memory unless explicitly stated.
 
 ## Functionality Videos
 ![alt tag](https://www.youtube.com/watch?v=KPDFuFnz9n8&feature=youtu.be)
