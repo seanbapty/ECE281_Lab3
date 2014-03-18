@@ -46,5 +46,5 @@ By seperating next state logic from state memory, the program does not create me
 ![alt tag](https://www.youtube.com/watch?v=wCrTbxB3LaA&feature=youtu.be)
 
 ### Documentation
-While drawing the schematic I referenced Lim Ching Hao's drawing loaded onto his github. I used his drawing to discern how the nibble_to_sseg connects to the nexys2_sseg. I also used his schematic to check my completed drawing for differences between our drawing.
+While drawing the schematic I referenced Lim Ching Hao's drawing loaded onto his github. I used his drawing to discern how the nibble_to_sseg connects to the nexys2_sseg. I also used his schematic to check my completed drawing for differences between our drawing. I referenced Sabin Park's README to discover ideas for the bad code, and how to format markdown.
 
