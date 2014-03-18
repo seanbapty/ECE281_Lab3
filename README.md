@@ -1,5 +1,10 @@
 ECE281_Lab3
 ===========
+#Functionality
+Basic Moore
+Basic Mealy
+More Floors
+
 # Pre-Lab
 #### Top Shell Schematic
 ![alt tag](https://raw.github.com/seanbapty/ECE281_Lab3/master/topshellschematic3.JPG)
