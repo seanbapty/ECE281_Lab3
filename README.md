@@ -9,6 +9,8 @@ The given code in the top shell is the controlling body for the LED display. Thi
 # Main Lab
 ## Code Critique
 
+## Functionality Videos
+[alt tag]!(https://www.youtube.com/watch?v=KPDFuFnz9n8&feature=youtu.be)
 
 ### Documentation
 While drawing the schematic I referenced Lim Ching Hao's drawing loaded onto his github. I used his drawing to discern how the nibble_to_sseg connects to the nexys2_sseg. I also used his schematic to check my completed drawing for differences between our drawing.
