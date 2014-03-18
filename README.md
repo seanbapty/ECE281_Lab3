@@ -11,13 +11,15 @@ The given code in the top shell is the controlling body for the LED display. Thi
 
 #### Bad Code 
 ```
+***
 floor_state_machine: process(clk)
-
+***
 ```
 This code is improper because it combines next state logic and state memory in one process, thus inadvertently creating memory. It is proper to seperate next state logic and state memory.
 
 #### Good Code
 ```
+***
 floor_state_machine : process(clk, up_down, reset, stop)
 ***
 ```
