@@ -9,10 +9,19 @@ The given code in the top shell is the controlling body for the LED display. Thi
 # Main Lab
 ## Code Critique
 
+#### Bad Code 
 ```
-	--clk'event and clk='1' is VHDL-speak for a rising edge
-	if clk'event and clk='1' then
+floor_state_machine: process(clk)
+
 ```
+This code is improper because it combines next state logic and state memory in one process, thus inadvertently creating memory. It is proper to seperate next state logic and state memory.
+
+#### Good Code
+```
+floor_state_machine : process(clk, up_down, reset, stop)
+***
+```
+By adding all posible inputs to the process's sensitivity list, the program does not have to "remember" what the values for an input were, thus eliminating the undesired memory.
 
 ## Functionality Videos
 ![alt tag](https://www.youtube.com/watch?v=KPDFuFnz9n8&feature=youtu.be)
