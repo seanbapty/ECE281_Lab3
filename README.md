@@ -9,7 +9,8 @@ The given code in the top shell is the controlling body for the LED display. Thi
 # Main Lab
 ## Code Critique
 
-```	--clk'event and clk='1' is VHDL-speak for a rising edge
+```
+	--clk'event and clk='1' is VHDL-speak for a rising edge
 	if clk'event and clk='1' then
 ```
 
